@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Review Page</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .form {
+            display: inline-block;
+        }
+    </style>
+
+<script> 
+    document.getElementById("formmm").addEventListener("submit", function(event){ 
+    event.preventDefault(); 
+    const firstName = document.getElementById("name").value; 
+    localStorage.setItem("name", firstName); 
+    document.getElementById("formmm").innerHTML=localStorage.getItem("name")
+    const Email = document.getElementById("email").value; 
+    localStorage.setItem("email", Email); 
+    document.getElementById("formmm").innerHTML=localStorage.getItem("email")
+    const Subject = document.getElementById("subject").value; 
+    localStorage.setItem("subject", Subject); 
+    document.getElementById("formmm").innerHTML=localStorage.getItem("subject")
+    const Message = document.getElementById("message").value; 
+    localStorage.setItem("message", Message); 
+    document.getElementById("formmm").innerHTML=localStorage.getItem("message")
+    this.reset(); 
+    }); 
+    </script>
+</head>
+<body style="background-color: #D1B7A1">
+    <nav style="text-align:center">
+        <a href="./this.html">Main</a>
+        <a href="./articles.html">Reviews</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./gallery.html">Gallery</a>
+    </nav>
+
+    <h1>The contact page</h1>
+
+    <form id="formmm" style="background-color: #DBC2AD" >
+        <fieldset id="set">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <br>
+        <br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject">
+
+        <br>
+        <br>
+
+        <label for="message">Message:</label>
+        <input type="textarea" id="message" style="height:200px; width:200px">
+
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+
+    <footer>
+        <a href="#contact.html" style="text-align:bottom">Back to the top</a>
+    </footer>
+</body>
+</html>
