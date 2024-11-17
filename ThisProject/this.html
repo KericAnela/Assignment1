@@ -4,41 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Review Page</title>
-
-    <style>
-        table, th, td {
-          border: 1px solid white;
-          border-collapse: collapse;
-         }
-        th, td {
-          background-color: #DBC2AD;
-         }
-
-         h1 {
-            font-family: "Lucida Handwriting", monospace, Arial;
-         }
-
-         header, section {
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-         }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="this.css">
 </head>
 
 <body style="background-color: #d1b7a1">
-    <header>
-    <nav style="text-align:center">
-        <a href="./this.html">Main</a>
-        <a href="./articles.html">Reviews</a>
-        <a href="./contact.html">Contact</a>
-    </nav>
-    </header>
 
-    <section style="background-color: #A18167; padding:10px">
-    <h1 id ="title" style="text-align:center;">Welcome!</h1>
-    <p style="text-align:center;">This is a page primarly dedicated to reviewing books. Enjoy your stay! :)</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">Review Page</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./this.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./articles.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <section id="title">
+      <div class="container">
+        <img src="titleimage.jpg" alt="A picture of beige book pages" style="width:100%;">
+        <div class="centered">Welcome!</div>
+        <div class="centered2">This is a page dedicated to reviewing books! Enjoy!</div>
+      </div>
     </section>
 
     <section>
@@ -67,10 +61,14 @@
     <br>
     <br>
 
-    <section>
-        <h3>New update</h3>
-
-    </section>
+    <article style="background-color:#f2e5d9; padding:20px; margin-top:20px;">
+      <h2>Pride and Prejudice - a review</h2>
+      <h5>10.07.2024.</h5>
+      <br>
+      <img src="./picture1.jpg" style="height: 250px; width: 200px">
+      <br>
+      <a href="https://www.bing.com/">Link to the article</a>
+    </article>
 
     <footer>
         <hr>

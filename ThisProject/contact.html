@@ -4,53 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Review Page</title>
-
-    <style>
-        body {
-            text-align: center;
-        }
-
-        .form {
-            display: inline-block;
-        }
-
-        input {
-            transition: width 2s;
-        }
-
-        input:hover {
-         width: 300px;
-        }
-    </style>
-
-    <script>
-    const x = document.getElementById("location");
-    
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-      }
-    }
-    
-    function showPosition(position) {
-      x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-    }
-    </script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
 </head>
-<body style="background-color: #D1B7A1">
-    <nav style="text-align:center">
-        <a href="./this.html">Main</a>
-        <a href="./articles.html">Reviews</a>
-        <a href="./contact.html">Contact</a>
-    </nav>
 
-    <h1>The contact page</h1>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Review Page</a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./this.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./articles.html">Articles</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <form id="form" style="background-color: #DBC2AD" method="POST" target="_blank" action="https://jsonplaceholder.typicode.com/">
+    <section id="title">
+        <div class="container">
+          <img src="titleimage.jpg" alt="A picture of beige book pages">
+          <div class="centered">Contact Page</div>
+        </div>
+      </section>
+
+      <br>
+    
+    <form id="form" method="POST" target="_blank" action="https://jsonplaceholder.typicode.com/">
         <fieldset id="set">
+        <legend>Form:</legend>
         <label for="name">Name:</label>
         <input type="text" id="name" required>
 
@@ -63,14 +51,11 @@
         <br>
         <br>
 
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">Option 1</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">Option 2</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">Option 3</label>
+        <input type="radio" id="reason" value="Suggestion">
+        <label for="html">Suggestion</label><br>
+        <input type="radio" id="reason" value="Offer">
+        <label for="css">Offer</label><br>
 
-        <br>
         <br>
 
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
