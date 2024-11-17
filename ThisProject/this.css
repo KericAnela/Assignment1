@@ -1,0 +1,60 @@
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+   }
+  th, td {
+    background-color: #DBC2AD;
+   }
+
+   h1 {
+      font-family: "Lucida Handwriting", monospace, Arial;
+   }
+
+   header, section {
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   /* text begin */
+   .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Helvetica;
+      font-size:larger;
+    }
+
+    .centered2 {
+      position: absolute;
+      top: 90%;
+      left: 48%;
+      transform: translate(-40%, -40%);
+    }
+    /* text end */
+
+    /* picture begin */
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    /* picture end */
+
+    *{
+      box-sizing: border-box;
+   }
+   .row {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .post-text-box {
+      flex: 30%;
+      padding: 20px;
+   }
+   .aboutme {
+      flex: 30%;
+      padding: 20px;
+   }
