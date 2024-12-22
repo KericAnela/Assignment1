@@ -1,3 +1,4 @@
+// Location begin
 const x = document.getElementById("location");
     
     function getLocation() {
@@ -11,3 +12,4 @@ const x = document.getElementById("location");
     function showPosition(position) {
       x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
     }
+// Location end

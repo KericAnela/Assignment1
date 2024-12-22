@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Review Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="../CSS/articles.css">
 </head>
 <body style="background-color: #D1B7A1">
 
@@ -14,13 +14,13 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="./this.html">Home</a>
+          <a class="nav-link" href="../HTML/this.html">Home</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="./articles.html">Articles</a>
+          <a class="nav-link" href="../HTML/articles.html">Articles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="nav-link" href="../HTML/contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -31,7 +31,7 @@
     
     <section id="title">
       <div class="container">
-        <img src="titleimage.jpg" alt="A picture of beige book pages" style="width:100%;">
+        <img src="../Images/titleimage.jpg" alt="A picture of beige book pages" style="width:100%;">
         <div class="centered">The Articles</div>
       </div>
     </section>
@@ -40,7 +40,7 @@
                 <h2>Pride and Prejudice - a review</h2>
                 <h5>10.07.2024.</h5>
                 <br>
-                <img src="./picture1.jpg" style="height: 250px; width: 200px">
+                <img id="img1" src="../Images/picture1.jpg" style="height: 250px; width: 200px">
                 <br>
                 <a href="https://www.bing.com/">Link to the article</a>
     </article>
@@ -48,9 +48,16 @@
           <h2>Steppenwolf - a review</h2>
           <h5>10.07.2024.</h5>
           <br>
-          <img src="./picture2.jpg" style="height: 250px; width: 200px;">
+          <img id="img2" src="../Images/picture2.jpg" style="height: 250px; width: 200px;">
           <br>
           <a href="https://www.bing.com/">Link to the article</a>
     </article>
+
+    <div id="newModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+      <div id="caption"></div>
+  </div>
+  <script src="../JS/articles.js"></script>
 </body>
 </html>
