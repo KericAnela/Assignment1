@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Review Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Review Page</a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../HTML/this.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../HTML/articles.html">Articles</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="../HTML/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <section id="title">
+        <div class="container">
+          <img src="../Images/titleimage.jpg" alt="A picture of beige book pages">
+          <div class="centered">Contact Page</div>
+        </div>
+      </section>
+
+      <br>
+    
+    <form id="form" method="POST" target="_blank" action="https://jsonplaceholder.typicode.com/">
+        <fieldset id="set">
+        <legend>Form:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <br>
+        <br>
+
+        <input type="radio" id="reason" value="Suggestion">
+        <label for="html">Suggestion</label><br>
+        <input type="radio" id="reason" value="Offer">
+        <label for="css">Offer</label><br>
+
+        <br>
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">Option 1</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">Option 2</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">Option 3</label>
+
+        <br>
+        <br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required>
+
+        <br>
+        <br>
+
+        <label for="message">Message:</label>
+        <input type="textarea" id="message" style="height:200px; width:200px" required>
+
+        <br>
+        <br>
+
+        <input type="button" id="location" value="Location">
+
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+
+    <footer>
+        <a href="#contact.html" style="text-align:bottom">Back to the top</a>
+    </footer>
+    <script src="../JS/contact.js"></script>
+</body>
+</html>

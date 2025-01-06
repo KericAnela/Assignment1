@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background-color: #D1B7A1;
+}
+
+.form {
+    display: inline-block;
+    background-color: #DBC2AD;
+}
+
+/* text begin */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Helvetica;
+    font-size:larger;
+  }
+  /* text end */
+
+  /* picture begin */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  /* picture end */
